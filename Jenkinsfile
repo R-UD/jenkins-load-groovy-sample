@@ -1,6 +1,6 @@
 #!groovy
 
-PipelineUtil util = load 'groovy/home/rud/PipelineUtil.groovy'
+def util = load 'groovy/home/rud/PipelineUtil.groovy'
 
 pipeline {
     agent any
