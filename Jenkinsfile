@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo '===== load groovy ====='
                 script {
-                    util = load 'groovy.home.rud.util'
+                    util = load 'groovy.home.rud.PipelineUtil'
                     String result = util.doSomething()
                     echo "result:$result"
                 }
