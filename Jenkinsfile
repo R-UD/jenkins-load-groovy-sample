@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo '===== do in other stage ====='
                 script {
-                    String result = util.doSomething()
+                    String result = modules.util.doSomething()
                     echo "result2:$result"
                 }
             }
