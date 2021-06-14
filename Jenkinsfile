@@ -10,7 +10,7 @@ pipeline {
                 echo '===== load groovy ====='
                 script {
                     modules.util = load 'groovy/home/rud/PipelineUtil.groovy'
-                    String result = util.doSomething()
+                    String result = modules.util.doSomething()
                     echo "result:$result"
                 }
             }
