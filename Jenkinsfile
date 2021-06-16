@@ -1,6 +1,8 @@
 #!groovy
 @Library('shared-lib-sample@master') _
 
+def modules = [:]
+
 pipeline {
     agent any
     stages {
