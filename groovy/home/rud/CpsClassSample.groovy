@@ -2,7 +2,7 @@ package home.rud
 
 String hello = 'hello'
 
-String doSomehing2() {
+String doSomething2() {
     return this.hello
 }
 
