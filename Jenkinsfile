@@ -1,6 +1,5 @@
 #!groovy
-
-def modules = [:]
+@Library('shared-lib-sample')
 
 pipeline {
     agent any
@@ -10,11 +9,10 @@ pipeline {
                 echo '===== load groovy ====='
                 script {
                     modules.util = load 'groovy/home/rud/PipelineUtil.groovy'
-                    modules.cpsSample = load 'groovy/home/rud/CpsClassSample.groovy'
                     String result = modules.util.doSomething()
-                    String result2 = modules.cpsSample.doSomething2()
                     echo "result:$result"
-                    echo "result2:$result2"
+
+                    sayHello 'hello world'
                 }
             }
         }
