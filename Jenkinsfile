@@ -14,8 +14,9 @@ pipeline {
                     String result = modules.util.doSomething()
                     echo "result:$result"
 
-                    sayHello 'hello world'
                 }
+
+                sayHello 'hello world'
             }
         }
         stage('do in other stage') {
