@@ -1,5 +1,5 @@
 #!groovy
-@Library('shared-lib-sample') _
+@Library('shared-lib-sample@master') _
 
 pipeline {
     agent any
