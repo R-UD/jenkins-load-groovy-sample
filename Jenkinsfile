@@ -12,7 +12,7 @@ pipeline {
                     modules.util = load 'groovy/home/rud/PipelineUtil.groovy'
                     modules.cpsSample = load 'groovy/home/rud/CpsClassSample.groovy'
                     String result = modules.util.doSomething()
-                    String result2 = modules.cpsSample.getHello()
+                    String result2 = modules.cpsSample.doSomething2()
                     echo "result:$result"
                     echo "result2:$result2"
                 }
